@@ -1,0 +1,16 @@
+query getHotels {
+  categoriesConnection {
+    edges {
+      node {
+        id
+        name
+        publishedAt
+        slug
+        updatedAt
+        publishedBy {
+          name
+        }
+      }
+    }
+  }
+}

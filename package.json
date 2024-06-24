@@ -1,0 +1,36 @@
+{
+  "name": "next_start",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "codegen": "graphql-codegen --config .graphqlrc.ts",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.10.0-rc.1",
+    "@apollo/experimental-nextjs-app-support": "^0.11.0",
+    "@mdx-js/loader": "^3.0.1",
+    "@mdx-js/react": "^3.0.1",
+    "@next/third-parties": "^14.2.3",
+    "graphql": "^16.8.1",
+    "next": "^14.2.3",
+    "next-auth": "^5.0.0-beta.19",
+    "next-mdx-remote": "^5.0.0",
+    "node": "^22.2.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hook-form": "^7.51.5"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^5.0.2",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "typescript": "^5"
+  }
+}
