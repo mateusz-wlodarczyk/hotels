@@ -5,8 +5,11 @@ import React from "react";
 import { ROUTES } from "../constants/utils";
 import { usePathname } from "next/navigation";
 import styles from "./MainNavbar.module.css";
-import { SignIn } from "./SignIn";
-export default function MainNavbar() {
+export default function MainNavbar({
+  signInComponent,
+}: {
+  signInComponent: React.ReactNode;
+}) {
   const path = usePathname();
   return (
     <nav>
@@ -24,7 +27,7 @@ export default function MainNavbar() {
           </li>
         ))}
       </ul>
-      <SignIn />
+      {signInComponent}
     </nav>
   );
 }

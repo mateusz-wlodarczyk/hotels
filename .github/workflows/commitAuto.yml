@@ -1,0 +1,15 @@
+name: commit auto
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run: npm
+      - name: Run ESLint
+        run: eslint . --ext .js,.jsx,.ts,.tsx

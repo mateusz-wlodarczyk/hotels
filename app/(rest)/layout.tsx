@@ -1,4 +1,5 @@
 import MainNavbar from "./components/MainNavbar";
+import { SignIn } from "./components/SignIn";
 
 export default function RootLayout({
   children,
@@ -7,7 +8,7 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <MainNavbar />
+      <MainNavbar signInComponent={<SignIn />} />
       {/* <ApolloWrapper>{children}</ApolloWrapper> */}
       {children}
     </>
